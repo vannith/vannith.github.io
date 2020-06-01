@@ -1,17 +1,10 @@
-<div class="sidebar-sticky col-md-2 float-left">
-<nav>
-<ul class="nav flex-column">
+<div class="sidenav">
 <h1>
-VAN NITH OLYSLAGER
+VAN NITH
+OLYSLAGER
 </h1>
-</ul>
-<ul class="nav flex-column">
-<li class="nav-item">
-<a class="nav-link item" href="content_images.php?folderName=illustrations">Illustrations</a>
-</li>
-<li class="nav-item">
-<a class="nav-link item" href="content_images.php?folderName=photography">Photography</a>
-</li>
+<a href="content_images.php?folderName=illustrations">Illustrations</a>
+<a href="content_images.php?folderName=photography">Photography</a>
 <!--<li class="nav-item">
 <a class="nav-link item" href="content_images.php?folderName=models" >3D Models</a>
 </li>
@@ -26,7 +19,5 @@ VAN NITH OLYSLAGER
 <li class="nav-item">
 <a class="nav-link item" href="content_images.php?folderName=contact">Contact</a>
 </li>-->
-</ul>
-</nav>
 </div>
 

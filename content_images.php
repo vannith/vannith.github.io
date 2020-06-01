@@ -9,15 +9,15 @@ if(isset($_GET['folderName']))
 getFiles('images/'.$_GET['folderName']);
 
 function getFiles($folder){
-	$filePaths=scandir($folder);
+	$filePaths=scandir($folder,SCANDIR_SORT_NONE);
 	$filePaths = array_diff($filePaths, array('.', '..'));
 
-	echo '<div class="col-md-10 float-left" >';
-	$contentElement='<div class="Images float-left">';
+	echo '<div class="main" >';
+	$contentElement='<div class="Images">';
 	$indexCounter=0;
 	foreach($filePaths as $file){
 				$indexCounter++;
-		$contentElement.='<img id="img'.$indexCounter.'" class="float-left" href="show_image.php?imageName="'.$file.'&folderName='.$folder.'" src="'.$folder.'/'.$file.'">';
+		$contentElement.='<img id="img'.$indexCounter.'" src="'.$folder.'/'.$file.'">';
 	}
 	echo $contentElement;
 	echo '</div>';
